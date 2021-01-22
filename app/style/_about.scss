@@ -5,10 +5,24 @@
       position: relative;
   }
 
+  .text-content {
+      background: white;
+      padding: 4rem;
+      position: absolute;
+      bottom: 8%;
+      right: -5%;
+      width: 60%;
+      color: #000000;
+  }
+
   h1 {
      font-size: 4rem;
-     background: white;
-     padding: 4rem;
-     position: absolute;
+  }
+
+  p {
+     font-family: "Alata", sans-serif;
+     line-height: 1.8;
+     color: #8c8c8c;
+     font-size: 1.2rem;
   }
 }

@@ -96,10 +96,83 @@ nav a {
   position: relative;
 }
 
-.about-section h1 {
-  font-size: 4rem;
+.about-section .text-content {
   background: white;
   padding: 4rem;
   position: absolute;
+  bottom: 8%;
+  right: -5%;
+  width: 60%;
+  color: #000000;
+}
+
+.about-section h1 {
+  font-size: 4rem;
+}
+
+.about-section p {
+  font-family: "Alata", sans-serif;
+  line-height: 1.8;
+  color: #8c8c8c;
+  font-size: 1.2rem;
+}
+
+.gallery-section {
+  width: 65vw;
+  margin: 0 auto;
+  padding: 2rem 0 5rem 0;
+}
+
+.gallery-section .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4rem;
+}
+
+.gallery-section .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.gallery-section .images {
+  position: relative;
+}
+
+.gallery-section img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-section p {
+  position: absolute;
+  bottom: 8%;
+  left: 15%;
+  font-family: "Josefin Sans", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.gallery-section h1 {
+  font-size: 4rem;
+}
+
+.gallery-section a {
+  text-transform: uppercase;
+  color: black;
+  font-family: "Alata", sans-serif;
+  padding: .6rem 2.5rem;
+  border: solid 2px black;
 }
 /*# sourceMappingURL=style.css.map */

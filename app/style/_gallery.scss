@@ -1,0 +1,47 @@
+.gallery-section {
+   @include body_margin;
+   padding: 2rem 0 5rem 0;
+
+   .title-section {
+      @include flex;
+      padding-bottom: 4rem;
+   }
+
+   .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 2.5rem;
+      
+   }
+
+   .images {
+      position: relative;
+   }
+
+   img {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   p {
+      position: absolute;
+      bottom: 8%;
+      left: 15%;
+      font-family: "Josefin Sans", serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: white;
+   }
+
+   h1 {
+      font-size: 4rem;
+   }
+
+   a {
+      text-transform: uppercase;
+      color: black;
+      font-family: "Alata", sans-serif;
+      padding: .6rem 2.5rem;
+      border: solid 2px black;
+   }
+}
