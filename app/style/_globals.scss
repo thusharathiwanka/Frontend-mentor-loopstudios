@@ -1,8 +1,44 @@
+html {
+   font-size: 100%;
+}
+
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+h1 {
+   font-family: "Josefin Sans", serif;
+   font-weight: 300;
+   text-transform: uppercase;
+   font-size: 5rem;
+}
+
 .attribution {
    font-size: 11px;
    text-align: center;
 }
 
 .attribution a {
-   color: hsl(228, 45%, 44%);
+   color: #3e52a3;
+}
+
+@mixin flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin body_margin {
+   width: 65vw;
+   margin: 0 auto;
 }

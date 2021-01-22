@@ -1,0 +1,14 @@
+.about-section {
+  .content {
+      @include body_margin;
+      padding: 10rem 0;
+      position: relative;
+  }
+
+  h1 {
+     font-size: 4rem;
+     background: white;
+     padding: 4rem;
+     position: absolute;
+  }
+}
