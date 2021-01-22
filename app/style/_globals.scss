@@ -26,10 +26,16 @@ h1 {
 .attribution {
    font-size: 11px;
    text-align: center;
+   color: #8c8c8c;
+   padding-bottom: 2rem;
+
+   a {
+      padding: 0;
+   }
 }
 
 .attribution a {
-   color: #3e52a3;
+   color: #cfcfcf;
 }
 
 @mixin flex {

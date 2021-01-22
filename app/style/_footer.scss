@@ -1,0 +1,53 @@
+footer {
+   min-height: 15vh;
+   background: black;
+
+   .footer-content {
+      @include body_margin;
+   }
+
+   .social {
+      padding: 2rem 0;
+      @include flex;
+
+      a:hover::after {
+         content: "";
+         width: 2rem;
+         height: .15rem;
+         background: white;
+         position: absolute;
+         bottom: -1rem;
+         left: .4rem;
+      }
+   }
+
+   .footer-about {
+      padding: 0 0 2rem 0;
+      @include flex;
+   }
+
+   a:not(:nth-child(1)) {
+      padding-left: 1rem;
+   }
+
+   a, p {
+      position: relative;
+      color: white;
+      font-family: "Alata", sans-serif;
+   }
+
+   p {
+      font-size: .8rem;
+      color: #8c8c8c;
+   }
+
+   .footer-logo {
+      padding-right: 1rem;
+   }
+
+   .attribution {
+      a {
+         padding: 0;
+      }
+   }
+}
