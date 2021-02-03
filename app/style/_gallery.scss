@@ -3,15 +3,28 @@
    padding: 2rem 0 5rem 0;
 
    .title-section {
+      min-height: 10vh;
       @include flex;
+      flex-wrap: wrap;
       padding-bottom: 4rem;
+
+      @include small-desktop {
+         flex-direction: column;
+      }
+
+      @include tablet {
+         text-align: center;
+      }
    }
 
    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 2.5rem;
-      
+
+       @include small-desktop {
+          flex-direction: column;
+       }
    }
 
    .images {
@@ -35,6 +48,18 @@
 
    h1 {
       font-size: 4rem;
+
+      @media screen and (max-width: 615px) {
+         font-size: 4rem;
+      }
+
+      @include big-mobile {
+         font-size: 3rem;
+      }
+
+       @include middle-mobile {
+          font-size: 2.2rem;
+       }
    }
 
    a {
@@ -44,6 +69,8 @@
       padding: .6rem 2.5rem;
       border: solid 2px black;
       transition: all .3s ease-in-out;
+      white-space: nowrap;
+      margin: 2rem 0;
 
       &:hover {
          color: white;

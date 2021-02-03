@@ -1,3 +1,57 @@
+/* mixins */
+@mixin flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin body_margin {
+   max-width: 1140px;
+   margin: 0 auto;
+
+   @include middle-desktop {
+      max-width: 80%;
+   }
+}
+
+/* media queries */
+$middle-desktop: 1600px;
+$small-desktop: 1024px;
+$tablet: 900px;
+$big-mobile: 500px;
+$middle-mobile: 400px;
+
+@mixin middle-desktop {
+   @media (max-width: $middle-desktop) {
+      @content;
+   }
+}
+
+@mixin small-desktop {
+   @media (max-width: $small-desktop) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media (max-width: $tablet) {
+      @content;
+   }
+}
+
+@mixin big-mobile {
+   @media (max-width: $big-mobile) {
+      @content;
+   }
+}
+
+@mixin middle-mobile {
+   @media (max-width: $middle-mobile) {
+      @content;
+   }
+}
+
+/* global styles */
 html {
    font-size: 100%;
 }
@@ -21,6 +75,18 @@ h1 {
    font-weight: 300;
    text-transform: uppercase;
    font-size: 5rem;
+
+   @media screen and (max-width: 615px) {
+      font-size: 4rem;
+   }
+
+   @include big-mobile {
+      font-size: 3rem;
+   }
+
+   @include middle-mobile {
+      font-size: 2.2rem;
+   }
 }
 
 .attribution {
@@ -36,15 +102,4 @@ h1 {
 
 .attribution a {
    color: #8c8c8c;
-}
-
-@mixin flex {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-@mixin body_margin {
-   width: 65vw;
-   margin: 0 auto;
 }

@@ -9,6 +9,7 @@ footer {
    .social {
       padding: 2rem 0;
       @include flex;
+      flex-wrap: wrap;
 
       a:hover::after {
          content: "";
@@ -19,15 +20,27 @@ footer {
          bottom: -1rem;
          left: .4rem;
       }
+
+      @include tablet {
+         flex-direction: column;
+
+         a {
+            padding: 0 1rem;
+         }
+      }
    }
 
    .footer-about {
       padding: 0 0 2rem 0;
       @include flex;
+
+      @include tablet {
+         flex-direction: column;
+      }
    }
 
    a {
-      padding-left: 1rem;
+      padding-left: .8rem;
    }
 
    .about-link:nth-child(1) {
@@ -43,10 +56,16 @@ footer {
    p {
       font-size: .8rem;
       color: #8c8c8c;
+      padding: 1rem 0;
    }
 
    .footer-logo {
       padding-right: 1rem;
+
+      @include tablet {
+         margin: 2rem 0;
+         padding: 0;
+      }
    }
 
    .attribution {

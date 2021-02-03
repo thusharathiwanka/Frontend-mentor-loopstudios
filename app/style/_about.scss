@@ -1,8 +1,19 @@
 .about-section {
+  @include body_margin;
+
+  @include middle-desktop {
+    text-align: center;
+  }
+
   .content {
-      @include body_margin;
+      width: 100%;
       padding: 10rem 0;
       position: relative;
+
+      @include middle-desktop {
+        position: initial;
+        padding: 6rem 0;
+      }
   }
 
   .text-content {
@@ -13,10 +24,30 @@
       right: -5%;
       width: 60%;
       color: #000000;
+
+      @include middle-desktop {
+       position: initial;
+       width: 100%;
+       text-align: center;
+       margin: 0;
+       padding: 2rem 1rem;
+      }
   }
 
   h1 {
      font-size: 4rem;
+
+     @media screen and (max-width: 615px) {
+       font-size: 4rem;
+     }
+
+     @include big-mobile {
+       font-size: 3rem;
+     }
+
+    @include middle-mobile {
+      font-size: 2.2rem;
+    }
   }
 
   p {
@@ -24,5 +55,9 @@
      line-height: 1.8;
      color: #8c8c8c;
      font-size: 1.2rem;
+
+     @include middle-desktop {
+       padding-top: 2rem;
+     }
   }
 }
