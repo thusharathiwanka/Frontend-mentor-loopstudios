@@ -212,7 +212,7 @@ nav .mobile-nav {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 0%;
+  right: 1.5rem;
 }
 
 nav .mobile-nav > img {
