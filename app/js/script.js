@@ -15,4 +15,5 @@ navClose.addEventListener("click", () => {
   navOpen.style.display = "block";
   navClose.style.display = "none";
   navLinks.style.display = "none";
+  logo.style.position = "initial";
 });
