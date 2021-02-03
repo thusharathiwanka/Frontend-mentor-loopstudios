@@ -181,6 +181,7 @@ nav li {
 nav a {
   color: white;
   font-family: "Alata", sans-serif;
+  position: relative;
 }
 
 nav a:hover::after {

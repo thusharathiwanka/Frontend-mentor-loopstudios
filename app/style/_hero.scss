@@ -75,6 +75,7 @@ nav {
    a {
       color: white;
       font-family: "Alata", sans-serif;
+      position: relative;
 
       &:hover::after {
          content: "";
